@@ -60,9 +60,12 @@ defmodule SimpleOban.MixProject do
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
       {:oban, "~> 2.18.0"},
-      {:oban_met, git: "git@github.com:scorebet/oban-met.git", tag: "v0.1.7", override: true},
-      {:oban_pro, git: "git@github.com:scorebet/oban-pro.git", tag: "v1.4.13"},
-      {:oban_web, git: "git@github.com:scorebet/oban-web.git", tag: "v2.10.5"}
+      # {:oban_met, git: "git@github.com:XXX/oban-met.git", tag: "v0.1.7", override: true},
+      # {:oban_pro, git: "git@github.com:XXX/oban-pro.git", tag: "v1.4.13"},
+      # {:oban_web, git: "git@github.com:XXX/oban-web.git", tag: "v2.10.5"},
+      {:oban_met, path: "../oban-met/", override: true},
+      {:oban_pro, path: "../oban-pro/"},
+      {:oban_web, path: "../oban-web/"}
     ]
   end
 
