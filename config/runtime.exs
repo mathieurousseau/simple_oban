@@ -114,11 +114,4 @@ if config_env() == :prod do
   #     config :swoosh, :api_client, Swoosh.ApiClient.Hackney
   #
   # See https://hexdocs.pm/swoosh/Swoosh.html#module-installation for details.
-
-  # config :simple_oban, Oban,
-  #   plugins: [
-  #     Oban.Pro.Plugins.DynamicCron
-  #     # Oban.Pro.Plugins.DynamicLifeline,
-  #     # {Oban.Plugins.Pruner}
-  #   ]
 end

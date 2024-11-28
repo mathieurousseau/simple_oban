@@ -1,18 +1,18 @@
 # SimpleOban
 
-To start your Phoenix server:
+This will reproduce the growing of the ETS table for our Repo `SimpleOban.Repo`
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+This behaviour happens on clustered node with global limit.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+You can start the 2 node with 
+- `./node1.sh`
+- `./node2.sh`
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+You then need to insert the crons jobs:
+- `SimpleOban.BaseWorker.insert_cron_jobs`
 
-## Learn more
+I am listing all the stored keys in the homepage: [homepage](http://localhost:4000)
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+You can always check on the dashboard:  [Dashboard](http://localhost:4000/dev/dashboard/ets?limit=50&search=SimpleOban.Repo&sort_by=memory&sort_dir=desc)
+
+

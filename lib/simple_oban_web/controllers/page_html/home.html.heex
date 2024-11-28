@@ -1,8 +1,5 @@
-<%= # _r = ref(0.351665259.1924530177.167898")
-# "#{inspect(assigns.entries)}" 
-"entries: #{length(assigns.entries)}" %>
+<%= "entries: #{length(assigns.entries)}" %>
 
 <%= for entry <- assigns.entries do %>
   <div style="white-space: nowrap;"><%= "#{inspect(entry, limit: :infinity)}" %></div>
 <% end %>
-
